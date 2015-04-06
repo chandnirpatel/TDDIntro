@@ -15,6 +15,6 @@ public class Account {
     }
 
     public void withdrawal(double withdrawalAmount) {
-        balance -= withdrawalAmount;
+        if(withdrawalAmount <= balance) balance -= withdrawalAmount;
     }
 }
