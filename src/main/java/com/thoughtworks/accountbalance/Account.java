@@ -1,10 +1,14 @@
 package com.thoughtworks.accountbalance;
 
 /**
- * Created by Chandni on 4/5/15.
+ * Created by Chandni
  */
 public class Account {
-    public double balance;
+    private double balance;
+
+    public double getBalance(){
+        return balance;
+    }
 
     public Account(double initialBalance) {
         balance = initialBalance;
